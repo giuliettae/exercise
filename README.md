@@ -3,10 +3,7 @@
 The following practical exercises should give you some familiarity with using 
 Git. 
 
-Note: The provided command line examples are to remind you of the correct syntax 
-and keywords, and won't necessarily work if you type them in blindly
-
-Other Note: to get help on a particular git command, use `git <command> --help`
+Note: to get help on a particular git command, use `git <command> --help`
 
 ## Setup
 1. Install and setup git on your computer (remember to set your name/email)
@@ -16,7 +13,7 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     $ git config --global user.email "example@maths.ox.ac.uk"
     ~~~
 
-2. Create an account (or login) to GitHub at <https://github.com> 
+2. Create an account (or login) to GitHub at <https://github.com>
 3. (optional) Generate a ssh-key and add it to your GitHub account (for more 
    information see 
    <https://help.github.com/articles/connecting-to-github-with-ssh/>)
@@ -26,7 +23,8 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     $ cat ~/.ssh/id_rsa.pub
     ~~~
 
-4. Fork this repository: <https://github.com/martinjrobins/exercise>
+4. Fork this repository: <https://github.com/mddemarie/exercise>
+5. Download GitUp for git visualization: https://gitup.co/ (there is a video, you can watch it too)
 
 ## Exercise 1: Making Commits
 
@@ -36,46 +34,54 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     $ git clone <url>
     ~~~
 
-2. Create and add a new file
+2. Create a function that will create a rectangle after execution.
+You can find the lesson here:
+https://opentechschool.github.io/python-beginners/en/simple_drawing.html
 
-    ~~~bash
-    $ git add <file>
-    ~~~
-
-3. Commit the new file
-
-    ~~~bash
-    $ git commit -m "message"
-    ~~~
-
-4. Examine the state of your repo with `git status`. 
+3. Check the Git status:
 
     ~~~bash
     $ git status
     ~~~
 
-5. Edit and save your new file, then add it to the staging area. Finally make a 
-   new commit with the edited file. At all stages use `git status` to see how 
-   your repository changes
+4. Add a new file to the staging area on your computer
+
+    ~~~bash
+    $ git add <file>
+    ~~~
+
+5. Commit the new file
+
+    ~~~bash
+    $ git commit -m "message"
+    ~~~
+
+6. Examine the state of your repo with `git status`. 
+
+    ~~~bash
+    $ git status
+    ~~~
+
+7. Edit and save your new file, then add it to the staging area. You have a chance to have a more complicated form in Python now ;) Finally make a new commit with the edited file. At all stages use `git status` to see how your repository changes
 
     ~~~bash
     $ git add <file>
     $ git commit -m "message"
     ~~~
 
-6. Make some more commits and view the log
+7. Make some more commits and view the log
 
     ~~~bash
     $ git log 
     ~~~
 
-7. Commit everything you have done so far
+8. Commit everything you have done so far
 
     ~~~bash
     $ git commit -a -m "message"
     ~~~
 
-8. Push the commits to the server
+9. Push the commits to your forked repo
 
     ~~~bash
     $ git push
