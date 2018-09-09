@@ -86,6 +86,8 @@ https://opentechschool.github.io/python-beginners/en/simple_drawing.html
     ~~~bash
     $ git push
     ~~~
+    
+Note: You can do this all in GitUp. Try it for yourself! :)
 
 ## Exercise 2: Branching and Merging
 
